@@ -1,0 +1,16 @@
+.topic-level {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 768px) {
+  .topic-level {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .topic-level {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
