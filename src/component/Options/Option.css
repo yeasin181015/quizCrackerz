@@ -1,0 +1,13 @@
+.route {
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #bab3b3;
+}
+
+@media only screen and (max-width: 768px) {
+  .route {
+    font-family: "Nanum Pen Script", cursive;
+    font-size: 20px;
+  }
+}
