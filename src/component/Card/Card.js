@@ -1,4 +1,5 @@
 import "./Card.css";
+import { FaLongArrowAltRight } from "react-icons/fa";
 const Card = ({ topic }) => {
   return (
     <div className="card-div">
@@ -13,7 +14,10 @@ const Card = ({ topic }) => {
         />
         <div className="topic-name">
           <p className="name">{topic.name}</p>
-          <button className="practice-btn">Start practice</button>
+          <button className="practice-btn">
+            <span>Start practice</span>
+            <FaLongArrowAltRight style={{ marginLeft: "10px" }} />
+          </button>
         </div>
       </div>
     </div>

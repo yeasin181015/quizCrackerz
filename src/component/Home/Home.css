@@ -2,15 +2,122 @@
   display: flex;
   justify-content: space-around;
 }
+.site {
+  position: relative;
+}
+.site-text {
+  width: 500px;
+  text-align: left;
+  position: absolute;
+  bottom: 15%;
+  left: 35%;
+}
+.mobile-view-text {
+  font-family: "Poppins", sans-serif;
+  display: none;
+  text-align: left;
+  position: absolute;
+  bottom: 65px;
+  left: 1%;
+  width: 300px;
+  font-size: 15px;
+}
+.site-text-paragraph {
+  font-family: "Poppins", sans-serif;
+}
+.site-image {
+  margin: 50px auto;
+  border-radius: 20px;
+  width: 40%;
+  height: 550px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("https://www.designer-daily.com/wp-content/uploads/2020/03/web-dev-business.jpg"),
+    url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0HDQ0NDQ8NDQcNFREWFhURExMYHSggGBolJxUfITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0NDg0PFSsZFRkrKystKysrKysrLS0tKys3NzctNy0rKzctLSsrLSsrKzcrNy0tKysrKy0rKysrKysrK//AABEIAMEBBQMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAABAAIDBQQG/8QAGBABAQEBAQAAAAAAAAAAAAAAABEBEgL/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAQIDBAX/xAAYEQEBAQEBAAAAAAAAAAAAAAAAEQESIf/aAAwDAQACEQMRAD8A/aJF9p2WNYyQJwHERpoYYBxoY0gUigkiNDCCKiCgcIKDRwNYgQQyDRjWsouJIo1iODCKcIKASQjyUi9TkkTBBjWLMazAWNYjmIHGhhBHBjSGJIo0CkKkiBwjGsQWNYMaxlECkUaIdSLgSSNkg4BxakiJJA8k4YY9NcQcxNYlBjShzCixrBmNZhRFY1mAMJxIqRSKkiKEUBw4sOILGg0ggUixnUdERrMSSRU1gw4BRSIyjoFeYo1DHauAzCocwFhxQwFjWCHCqcKw5gqzDEQgKQqRQqSwoI4sOCHCCyqRAuBEaNBJQVojCgcSSIEkK84xFquMShwlIMxqA4tWGHMDQRYUhYSCtIooUARUCJQoDmEYUWFIouYEUNAFCiHEgTQjWIiSSKA0AfAoYcwrnBFDDCkGYcwxQIoTmGLVghhzDEqiEwxagRhi0ERii1Ao1EijCYYVRhhzDEqsxRqGJRzijpBClZizG+VClGYY1mGJRiKNxRKViJuIq15uYo3yuUrLPJ5a5OYUZhzy1mNQqsRqNQwqM5hjWYYVKzDGs8mFSsRRuGLRiKNwxaOfJjcMKrEOeW4YlKzmGNQxKViKOkUKVzijpFCpWOVG4YlKzmKN5hzEq1mLluKJSufKbhSpXmcnl0zyuStVjk8t5hzylSscnPLfJzCpWOTy3FClZhjUUWozDGoYtGIY1FFozDGoo1VZhhMSqIcw5hSoIYYUGYuWkUEUKKRmGFCxZjWDGsRAoUiCBqIHwwwlzrUEUOEpBDElpEYqqUiIqqryUE1TkqhLVhSS0hMGNYVEUUqRJGBECIKgYYAOHMMEoJiiIEYoAS3ED4lUo4V35NVUKkSUMAVUwxpAjDAZLUPK1KwY1yeVpWYY1y1nkrNYzDmNw55E3WIY6Z5UWs1iGNw8lSucMbihSscnluKFSscmNwxKlYijcCUogjSKVnlNRLSvg5Ubhji9FY5XLcKpWOTGjArGYY2lqVnk8tJUrOeTy0qJRDEaqLkwVUGoWaqqNFmmiFCkREIChVQJrKCNVVkgkkIQQD46awXB6I1VWSpDTWUo1VRDFQ1VcmKngqphilCahhUrJa5MSpWTDnkwqUIwxUrKahilZUbhipWIY1DCpWIY3FEqViKNxQpWIo3FClZgb5JSvO1JOL0lJAjhTSaViSo0sSVlHEgONJIysKSCSSocSShKSs6jiSmolIgwlCJJIJJAkkqP/9k=");
+  background-blend-mode: lighten;
+}
+.tab-view {
+  display: none;
+}
 
 @media only screen and (max-width: 768px) {
   .topic-level {
     flex-direction: column;
   }
+  .site-image {
+    width: 90%;
+    height: 400px;
+  }
+  .site-text {
+    width: 300px;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+  }
+  .site-text-paragraph {
+    display: none;
+  }
+  .mobile-view-text {
+    display: block;
+  }
 }
-@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 769px) and (max-device-width: 1179px) and (-webkit-min-device-pixel-ratio: 1) {
   .topic-level {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .site-image {
+    width: 90%;
+    height: 500px;
+    border: 2px solid black;
+  }
+  .site-text {
+    width: 650px;
+    text-align: left;
+    position: absolute;
+    bottom: 125px;
+    left: 10%;
+  }
+  .site {
+    width: 100%;
+    border: 2px solid black;
+  }
+}
+@media only screen and (min-device-width: 1180px) and (max-device-width: 1250px) and (-webkit-min-device-pixel-ratio: 1) {
+  .site-image {
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, rgb(252, 164, 237), white);
+    width: 90%;
+    height: 500px;
+    border: 2px solid black;
+  }
+  .site-text {
+    width: 650px;
+    text-align: left;
+    position: absolute;
+    bottom: 125px;
+    left: 10%;
+  }
+  .tab-view {
+    display: block;
+    width: 450px;
+    text-align: left;
+    margin-right: 20px;
+  }
+  .site-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .site-text-paragraph {
+    display: none;
+  }
+  .tab-view-paragraph {
+    font-family: "EB Garamond", serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .tab-view-image {
+    border-radius: 20px;
   }
 }
