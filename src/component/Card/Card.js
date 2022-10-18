@@ -1,5 +1,6 @@
 import "./Card.css";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Card = ({ topic }) => {
   return (
     <div className="card-div">
@@ -15,7 +16,11 @@ const Card = ({ topic }) => {
         <div className="topic-name">
           <p className="name">{topic.name}</p>
           <button className="practice-btn">
-            <span>Start practice</span>
+            <Link to={`/api/quiz/${topic.id}`}>
+              <span style={{ color: "white", textDecoration: "none" }}>
+                Start practice
+              </span>
+            </Link>
             <FaLongArrowAltRight style={{ marginLeft: "10px" }} />
           </button>
         </div>

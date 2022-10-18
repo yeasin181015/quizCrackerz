@@ -1,0 +1,7 @@
+.option {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.option > div {
+  border: solid 2px rgb(159, 12, 196);
+}

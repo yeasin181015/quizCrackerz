@@ -1,6 +1,7 @@
 .topic-level {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 50px;
 }
 .site {
   position: relative;
@@ -69,7 +70,6 @@
   .site-image {
     width: 90%;
     height: 500px;
-    border: 2px solid black;
   }
   .site-text {
     width: 650px;
@@ -80,7 +80,6 @@
   }
   .site {
     width: 100%;
-    border: 2px solid black;
   }
 }
 @media only screen and (min-device-width: 1180px) and (max-device-width: 1250px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -89,7 +88,6 @@
     background-image: linear-gradient(to right, rgb(252, 164, 237), white);
     width: 90%;
     height: 500px;
-    border: 2px solid black;
   }
   .site-text {
     width: 650px;
