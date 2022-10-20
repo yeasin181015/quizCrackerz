@@ -2,6 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Project Information
+
+Project Name: Quiz Bash
+Live link:
+About:
+
+1.  A website for web developement quiz that includes React, JS, CSS & Git.
+2.  Uses react routers to navigate to different pages when clicked on particlar options.
+3.  Uses loader and useLoader of react to fetch data from an outside link and display accordingly.
+4.  Uses ToastContainer for showing toast when clicking on answers.
+
 ## Available Scripts
 
 In the project directory, you can run:
