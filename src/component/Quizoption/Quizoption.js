@@ -13,7 +13,7 @@ const Quizoption = ({ choice, checkAnswer, questionID }) => {
       >
         {choice}
       </div>
-      <ToastContainer />
+      {/* <ToastContainer /> */}
     </>
   );
 };
