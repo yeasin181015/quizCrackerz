@@ -1,6 +1,5 @@
 .accordion-outerdiv {
   margin: 0 auto;
-  border: solid 2px black;
   margin-top: 15%;
   width: 1000px;
 }
@@ -11,5 +10,12 @@
 @media only screen and (max-width: 768px) {
   .accordion-outerdiv {
     width: 90%;
+    margin-top: 40%;
+  }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1179px) and (-webkit-min-device-pixel-ratio: 1) {
+  .accordion-outerdiv {
+    width: 90%;
+    margin-top: 50%;
   }
 }
