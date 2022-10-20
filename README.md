@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Project Information
 
 Project Name: Quiz Bash
-Live link:
+Live link: https://silly-sunburst-1f505a.netlify.app
 About:
 
 1.  A website for web developement quiz that includes React, JS, CSS & Git.
