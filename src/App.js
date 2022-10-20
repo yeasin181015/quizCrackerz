@@ -5,6 +5,7 @@ import Statistics from "./component/Statistics/Statistics";
 import Blog from "./component/Blog/Blog";
 import Home from "./component/Home/Home";
 import Quiz from "./component/Quiz/Quiz";
+import Error from "./component/Error/Error";
 
 function App() {
   const router = createBrowserRouter([
@@ -45,6 +46,10 @@ function App() {
             );
           },
           element: <Quiz></Quiz>,
+        },
+        {
+          path: "/*",
+          element: <Error></Error>,
         },
       ],
     },
