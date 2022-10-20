@@ -17,9 +17,7 @@ const Card = ({ topic }) => {
           <p className="name">{topic.name}</p>
           <button className="practice-btn">
             <Link to={`/api/quiz/${topic.id}`}>
-              <span style={{ color: "white", textDecoration: "none" }}>
-                Start practice
-              </span>
+              <span className="practice-btn-span">Start practice</span>
             </Link>
             <FaLongArrowAltRight style={{ marginLeft: "10px" }} />
           </button>

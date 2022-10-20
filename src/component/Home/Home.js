@@ -1,6 +1,7 @@
 import Card from "../Card/Card";
 import { useLoaderData } from "react-router-dom";
 import "./Home.css";
+import React from "react";
 
 const Home = () => {
   const items = useLoaderData();

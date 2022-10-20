@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./Header.css";
 import Option from "../Options/Option";
 
@@ -11,9 +10,7 @@ const Header = () => {
   return (
     <nav className="navbar">
       <div className="quiz-bash">
-        <Link to="/" className="icon-name">
-          Quiz Bash
-        </Link>
+        <span className="icon-name">Quiz Bash</span>
       </div>
       <div className="navbar-option">
         {routes.map((route) => (
